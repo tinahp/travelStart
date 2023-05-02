@@ -1,1 +1,0 @@
-{"uuid":"e8e58c27-1fe3-43a1-8c8b-a94ca8f1c736","name":"travelStart","children":["3ee6b5a8-1480-49b6-95cc-4e2d4bc776c7"],"befores":[{"name":"SetUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1681690879148,"stop":1681690884565}],"afters":[],"links":[],"start":1681690879126,"stop":1681690885665}

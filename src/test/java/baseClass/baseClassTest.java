@@ -2,10 +2,10 @@ package baseClass;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
-import pageObject.TestLanding;
-import pageObject.landingPage;
+import pageObject.*;
 
 public class baseClassTest {
 
@@ -24,12 +24,16 @@ public class baseClassTest {
         //extentManager ExtentManager = new extentManager();
         // Create a Landingpage
         protected landingPage landingPage;
-        protected TestLanding TestLanding;
+        protected bookingPage bookingpage;
+        protected profilePage profilePage;
+        protected paymentPage paymentPage;
 
         @BeforeTest
         public void SetUp() {
             // reports = ExtentManager.getReports();
             // test = reports.createTest("BaseClassTest");
+           // ChromeOptions options = new ChromeOptions();
+           // options.addArguments("---disable notifications");
             //Set Chrome Browser
             System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
             this.driver = new ChromeDriver();
@@ -38,12 +42,14 @@ public class baseClassTest {
             driver.manage().window().maximize();
             //Open the page URL
             driver.get("https://www.travelstart.com/");
-            // test.log(Status.INFO, "Starting test case Home_button");
 
 
-            //Instantiate HomePage after launching the browser
+
+            //Instantiate the page after launching the browser
              landingPage = new landingPage(driver);
-             TestLanding = new TestLanding(driver);
+             bookingpage = new bookingPage(driver);
+             profilePage = new profilePage(driver);
+             paymentPage = new paymentPage(driver);
         }
     }
 
