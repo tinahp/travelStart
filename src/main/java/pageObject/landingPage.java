@@ -14,7 +14,7 @@ public class landingPage {
     }
 
 
-    //Second location of web Element
+    // locate the web Element
     private By ClickHome = By.cssSelector("li[routerlinkactive='active'] button");
     //private By ClickHome = By.cssSelector("li[class='active']");
     private By ClickReturn = By.cssSelector("app-search li:nth-child(1) label:nth-child(1)");

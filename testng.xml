@@ -4,12 +4,12 @@
     <test verbose="2" preserve-order="true" name="C:\Users\Tizspec\IdeaProjects\travelStart">
         <classes>
             <class name="TestSuite.landingTest">
-                <methods>
-                    <include name="Bookflight"/>
-                    <include name="BookFlight1"/>
-                    <include name="Cprofile"/>
-                    <include name="Paymentpage"/>
-                </methods>
+<!--                <methods>-->
+<!--                    <include name="Bookflight"/>-->
+<!--                    <include name="BookFlight1"/>-->
+<!--                    <include name="Cprofile"/>-->
+<!--                    <include name="Paymentpage"/>-->
+<!--                </methods>-->
             </class>
         </classes>
     </test>
